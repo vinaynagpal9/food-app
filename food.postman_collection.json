@@ -11,24 +11,13 @@
 				"method": "POST",
 				"header": [],
 				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "foodName",
-							"value": "pizza",
-							"type": "text"
-						},
-						{
-							"key": "foodDetails",
-							"value": "jiasbdakjsndakjondskjl",
-							"type": "text"
-						},
-						{
-							"key": "foodImage",
-							"value": "onaesjknajos",
-							"type": "text"
+					"mode": "raw",
+					"raw": "{\n    \"foodName\":\"mmm\",\n    \"foodDetails\":\"mmm\",\n    \"foodImage\":[\n        {\n            \"image\":\"xshbshbsxh\"\n            }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
+					}
 				},
 				"url": {
 					"raw": "localhost:3003/food/",

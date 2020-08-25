@@ -5,7 +5,7 @@ const Joi = require('@hapi/joi');
 const addFood = Joi.object({
 	foodName: Joi.string().required(),
 	foodDetails: Joi.string().required(),
-	foodImage: Joi.string().optional()
+	foodImage: Joi.array().optional()
 });
 
 const nothing = Joi.object({});

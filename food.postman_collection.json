@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "9ef13b1c-8d51-4070-be9d-4b778c4fcf35",
+		"name": "food",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addfood",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "foodName",
+							"value": "pizza",
+							"type": "text"
+						},
+						{
+							"key": "foodDetails",
+							"value": "jiasbdakjsndakjondskjl",
+							"type": "text"
+						},
+						{
+							"key": "foodImage",
+							"value": "onaesjknajos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3003/food/",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"food",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get food",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Id",
+							"value": "5f44ff292fd85655cd4e2b9f",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "mirchi",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3003/food/",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"food",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addingridient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "mirchi",
+							"type": "text"
+						},
+						{
+							"key": "Id",
+							"value": "5f44fd0402789a51ecdd2f01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3003/food/ingridient",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"food",
+						"ingridient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Id",
+							"value": "5f44fd0402789a51ecdd2f01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3003/food/",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"food",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
